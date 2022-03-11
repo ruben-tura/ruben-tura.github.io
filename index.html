@@ -33,7 +33,7 @@
     <script>
       function zoomRedirect() {
         //const urlParams = new URLSearchParams("https://ruben-tura.com/?zoom=true");
-        let url = new URL("https://ruben-tura.com/?zoom=true");
+        let url = new URL(window.location.href);
         let params = new URLSearchParams(url.search);
         alert(params.get('zoom'));
         if (params.get('zoom') === "true") {
