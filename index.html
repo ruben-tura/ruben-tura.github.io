@@ -30,7 +30,13 @@
 
   </head>
   <body>
-
+    <script>
+      const urlParams = new URLSearchParams("https://ruben-tura.com/?zoom=true");
+      //alert(urlParams.has('size'));
+      if (urlParams.has('zoom')) {
+        window.location = "https://zoom.us/j/8596383074?pwd=VitzZmNXQ01LTDVISjNmeDBkWUVmdz09"; 
+      }
+    </script>
     <!-- Header Area wrapper Starts -->
     <header id="header-wrap">
       <!-- Navbar Start -->
