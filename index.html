@@ -31,11 +31,14 @@
   </head>
   <body>
     <script>
-      const urlParams = new URLSearchParams("http://ruben-tura.com/?zoom=true");
-      //alert(urlParams.has('size'));
-      if (urlParams.has('zoom')) {
-        window.location = "https://zoom.us/j/8596383074?pwd=VitzZmNXQ01LTDVISjNmeDBkWUVmdz09"; 
+      function zoomRedirect() {
+        const urlParams = new URLSearchParams("http://ruben-tura.com/?zoom=true");
+        //alert(urlParams.has('size'));
+        if (urlParams.has('zoom')) {
+          window.location = "https://zoom.us/j/8596383074?pwd=VitzZmNXQ01LTDVISjNmeDBkWUVmdz09"; 
+        }
       }
+      window.onload = zoomRedirect;
     </script>
     <!-- Header Area wrapper Starts -->
     <header id="header-wrap">
