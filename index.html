@@ -32,9 +32,11 @@
   <body>
     <script>
       function zoomRedirect() {
-        const urlParams = new URLSearchParams("https://ruben-tura.com/?zoom=true");
-        alert(urlParams.has('zoom'));
-        if (urlParams.has('zoom')) {
+        //const urlParams = new URLSearchParams("https://ruben-tura.com/?zoom=true");
+        let url = new URL("https://ruben-tura.com/?zoom=true");
+        let params = new URLSearchParams(url.search);
+        alert(params.has('zoom'));
+        if (params.has('zoom')) {
           window.location = "https://zoom.us/j/8596383074?pwd=VitzZmNXQ01LTDVISjNmeDBkWUVmdz09"; 
         }
       }
