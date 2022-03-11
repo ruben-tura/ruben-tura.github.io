@@ -36,7 +36,7 @@
         let url = new URL("https://ruben-tura.com/?zoom=true");
         let params = new URLSearchParams(url.search);
         //alert(params.has('zoom'));
-        if (params.get('zoom') == "true") {
+        if (params.get('zoom') === "true") {
           window.location = "https://zoom.us/j/8596383074?pwd=VitzZmNXQ01LTDVISjNmeDBkWUVmdz09"; 
         }
       }
